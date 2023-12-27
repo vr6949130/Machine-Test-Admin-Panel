@@ -1,0 +1,60 @@
+$text_color: #000000;
+$font-family_1: 'Poppins';
+$subtitle_color: #6A6A6A;
+
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins-Medium.ttf')format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+body {
+	font-weight: normal;
+	font-family: $font-family_1;
+	color: $text_color;
+	font-size: 18px;
+	line-height: 27px;
+	background: #F3F6FD;
+}
+.container {
+	max-width: 1480px;
+	padding: 0;
+}
+p {
+	margin-bottom: 0;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 0;
+}
+h3 {
+	margin: 0;
+}
+h4 {
+	margin: 0;
+}
+h5 {
+	margin: 0;
+}
+h6 {
+	margin: 0;
+}
+.sub-title {
+	color: $subtitle_color;
+	font-size: 13px;
+	line-height: 20px;
+}
+.main {
+	padding: 25px 25px 0px 25px;
+	padding-left: 300px;
+}

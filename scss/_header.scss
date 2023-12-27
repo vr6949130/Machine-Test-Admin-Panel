@@ -1,0 +1,128 @@
+$color_1: #000000;
+$color_2: #63768D;
+$color_3: #ffffff;
+$color_4: #6A6A6A6B;
+
+.site-header {
+	.navbar-custom {
+		margin-left: 273px;
+		background: #fff;
+        z-index: 999;
+        position: relative;
+		.topbar {
+			display: flex;
+			justify-content: space-between;
+			border-bottom: 1px solid #e3e3e3;
+			box-shadow: 2px 2px 0px 0px #0000000D;
+		}
+		.app-search {
+			input {
+				&::placeholder {
+					color: $color_4;
+				}
+			}
+		}
+	}
+	.logo-topbar {
+		width: 272px;
+		text-align: center;
+		border-right: 1px solid #e3e3e3;
+	}
+	.nav-link.nav-user {
+		display: flex;
+		padding: 0px;
+		align-items: center;
+	}
+	.account-user-avatar {
+		background-image: url(../image/panelicon.png);
+		background-repeat: no-repeat;
+		background-size: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 36px;
+		height: 40px;
+		margin-right: 11px;
+		span {
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 27px;
+			color: $color_3;
+		}
+	}
+	.topbar-menu {
+		margin-bottom: 0px;
+		li {
+			border-left: 1px solid #DCDCDC;
+			padding: 9px 0px;
+			.noti-icon-badge {
+				background: #FF5050;
+				position: absolute;
+				top: 15px;
+				left: 26px;
+				color: $color_3;
+				border-radius: 50px;
+				font-size: 10px;
+				width: 16px;
+				height: 16px;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+			.noti-icon-email {
+				background: #C600E4;
+				position: absolute;
+				top: 8px;
+				left: 20px;
+				color: $color_3;
+				border-radius: 50px;
+				font-size: 10px;
+				width: 16px;
+				height: 16px;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		.email {
+			border: none;
+		}
+		.dropdown-toggle {
+			&::after {
+				border: none;
+				background-image: url(../image/menuicon.png);
+				width: 15px;
+				background-repeat: no-repeat;
+				height: 8px;
+				margin-left: 21px;
+			}
+		}
+	}
+	.button-toggle-menu {
+		border: none;
+		background: #3e556800;
+	}
+	.app-search {
+		.input-group {
+			input {
+				border: none;
+			}
+		}
+	}
+	.nav-user {
+		h5 {
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 20px;
+			color: $color_1;
+		}
+		p {
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 18px;
+			color: $color_2;
+		}
+	}
+}
