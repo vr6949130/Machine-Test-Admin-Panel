@@ -16,10 +16,29 @@ $color_4: #6A6A6A6B;
 			box-shadow: 2px 2px 0px 0px #0000000D;
 		}
 		.app-search {
+			height: 100%;
+			border-left: 1px  solid #e3e3e3;
+			padding-left: 15px;
 			input {
 				&::placeholder {
 					color: $color_4;
 				}
+				&:focus-visible{
+					outline: none;
+					border: 0px;
+					box-shadow: unset !important;
+				}
+				&:focus {
+					outline: none;
+					border: 0px;
+					box-shadow: unset !important;
+				}
+			}
+			form {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100%;
 			}
 		}
 	}
@@ -126,3 +145,121 @@ $color_4: #6A6A6A6B;
 		}
 	}
 }
+/*Media Query Starts*/
+@media (max-width: 1440px){
+    .site-header .navbar-custom{
+        margin-left: 273px;
+    }
+    #stats_section .stats-card .stats-icon img {
+        width: 28px;
+    }
+    #stats_section .stats-card .stats-icon {
+        margin-right: 10px;
+    }
+    #stats_section .stats-card {
+        padding: 15px 10px;
+    }
+    #recent_activities .activity-card .activity-table img {
+        margin-right: 20px;
+        width: 40px;
+    }
+    #recent_activities .activity-card {
+        padding: 20px 15px 0px 15px;
+    }
+    #recent_activities .activity-card .card-header {
+        padding-bottom: 20px;
+    }
+    #recent_activities .activity-card .activity-table td {
+        padding: 12px 8px;
+    }
+    #recent_activities .activity-card .activity-table td:nth-child(1){
+        width: 75%;
+    }
+    #image_section .image-card-item{
+        padding: 20px 25px 30px 25px;
+    }
+    #image_section img{
+        height: 200px;
+    }
+    #recent_activities .activity-card .activity-table .view-activity-link td {
+        padding: 15px 8px;
+    }
+}
+@media (max-width: 768px){
+	#stats_section {
+		.stats-card {
+			.stats-icon {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	#image_section{
+		.image-card-item {
+        	padding: 20px 20px 0px 20px;
+    	}
+		.image-description{
+			padding: 0px 8px 20px 8px;
+		}
+	}
+}
+@media (max-width: 767px){
+    .page-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .topbar-menu {
+        padding: 0px;
+    }
+	
+    .main.expanded {
+        padding-left: 80px;
+    }
+    #recent_activities {
+		.activity-card {
+			.activity-table {
+				td:nth-child(1) {
+					width: 72%;
+				}
+			}
+		}
+	}
+    .dropdown.email, .notification-list{
+        width: 50px;
+    }
+
+  .site-header {
+	.topbar-menu {
+		.dropdown-toggle::after{
+			margin-left: 3px;
+			width: 11px;
+			background-size: contain;
+		}
+		.email {
+			padding-right: 19px;
+		}
+	}
+	.account-user-avatar {
+        margin-right: 5px;
+        width: 28px;
+        height: 28px;
+        background-size: cover;
+    }
+	.account-user-avatar {
+		span{
+			font-size: 13px;
+		}
+    }
+	.navbar-custom.expanded-navbar {
+		margin-left: 0px;
+	}
+	.nav-user-name {
+        display: none;
+    }
+	.navbar-custom {
+		margin-left: 0px;
+	}
+  }
+}
+/*Media Query Ends*/

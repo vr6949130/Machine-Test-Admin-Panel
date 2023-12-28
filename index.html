@@ -6,6 +6,7 @@
     <link rel="icon" type="image/x-icon" href="./image/favicon.png">
     <title>Design App</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./scss/styles.css" />
     <link
       rel="stylesheet"
@@ -19,7 +20,6 @@
           <div class="d-flex align-items-center gap-lg-2 gap-1">
             <!-- Sidebar Menu Toggle Button -->
             <button class="button-toggle-menu">
-              <!-- <i class="mdi mdi-menu"></i> -->
               <img src="image/FilterLeft.png" />
             </button>
 
@@ -74,10 +74,10 @@
                 <span class="account-user-avatar">
                   <span>U</span>
                 </span>
-                <span class="d-lg-flex flex-column">
+                <span class="d-lg-flex flex-column nav-user-name">
                   <h5 class="my-0">Username Here</h5>
                   <p class="my-0 fw-normal">Lead UI/UX</p>
-                </span>
+              </span>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-end dropdown-menu-animated profile-dropdown"
@@ -122,112 +122,130 @@
         </div>
       </div>
     </header>
-    <div class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-light">
-      <a
-        href="#"
-        class="logo d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
-      >
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <img src="image/logo.png" alt="logo" />
+
+    <!-- Sidebar Starts -->
+    <div class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-light" >
+      <a href="#" class="logo d-flex align-items-center justify-content-between mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <div class="d-flex align-items-center">
+          <img src="image/logo.png" alt="logo" class="logo-lg">
+          <img src="image/logo-mini.png" alt="logo" class="logo-sm">
+        </div>
+        <!-- <i class="fa fa-times close-icon"></i> -->
+        <img src="image/close.png" alt="logo" class="close-icon" width="100%" height="100%">
       </a>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">
-            <img src="image/sidebarmenu.png" />
+            <img src="image/sidebarmenu.png">
             Dashboard
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-dark">
-            <img src="image/ReceiptCutoff.png" />
+            <img src="image/ReceiptCutoff.png">
             New Images
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-dark">
-            <img src="image/BugFill.png" />
+            <img src="image/BugFill.png">
             Reported Images
           </a>
         </li>
         <li>
           <a href="#" class="nav-link link-dark">
-            <img src="image/menucacke.png" />
+            <img src="image/menucacke.png">
             Approved Images
           </a>
         </li>
+       
       </ul>
       <div class="designere">
-        <h4>Designers</h4>
-
-        <div class="table-responsive">
-          <table class="table table-centered table-nowrap table-hover mb-0">
-            <tbody>
-              <tr>
-                <td>
-                  <div class="designere-content d-flex align-items-start">
-                    <span class="color-green">EL</span>
-                    <div class="info-wrapper">
-                      <h5 class="mt-0 mb-1">Elizabeth</h5>
-                      <div class="designer-info d-flex justify-content-between">
-                        <p class="font-13">Designer</p>
-                        <small class="fw-normal ms-3">5 New</small>
-                      </div>
-                    </div>
+          <h4>Designers</h4>
+  
+                  <div class="table-responsive">
+                      <table class="table table-centered table-nowrap table-hover mb-0">
+                          <tbody>
+                              <tr>
+                                  <td>
+                                      <div class="designere-content">
+                                          <span class="color-green">EL</span>
+                                          <div class="content-title">
+                                              <h5 class="mt-0 mb-1">Elizabeth</h5>
+                                              <div class="designer-info">
+                                                <p class="font-13">Designer</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <p class="fw-normal ms-3">5 New</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="designere-content">
+                                         <span class="color-ble">RI</span>
+                                          <div class="content-title">
+                                              <h5 class="mt-0 mb-1">Richard V.Welsh</h5>
+                                              <div class="designer-info">
+                                                <p class="font-13">Sr. Designer</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <p class="fw-normal ms-3">2 New</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="designere-content ">
+                                          <span class="color-yele">KA</span>
+                                          <div class="content-title">
+                                              <h5 class="mt-0 mb-1">Kaci M. Langston</h5>
+                                              <div class="designer-info">
+                                                <p class="font-13">Jr. Designer</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <p class="fw-normal ms-3">1 New</p>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>
+                                      <div class="designere-content">
+                                          <span class="color-purple">JO</span>
+                                          <div class="content-title">
+                                              <h5 class="mt-0 mb-1">Joseph S. Ferland</h5>
+                                              <div class="designer-info">
+                                                <p class="font-13">Designer</p>
+                                              </div>
+                                              
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                      <p class="fw-normal ms-3"></p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="designere-content d-flex align-items-start">
-                    <span class="color-ble">RI</span>
-                    <div class="info-wrapper">
-                      <h5 class="mt-0 mb-1">Richard V.Welsh</h5>
-                      <div class="designer-info d-flex justify-content-between">
-                        <p class="font-13">Sr. Designer</p>
-                        <small class="fw-normal ms-3">2 New</small>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="designere-content d-flex align-items-start">
-                    <span class="color-yele">EL</span>
-                    <div class="info-wrapper">
-                      <h5 class="mt-0 mb-1">Kaci M. Langston</h5>
-                      <div class="designer-info d-flex justify-content-between">
-                        <p class="font-13">Jr. Designer</p>
-                        <small class="fw-normal ms-3">1 New</small>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="designere-content d-flex align-items-start">
-                    <span class="color-purple">EL</span>
-                    <div class="info-wrapper">
-                      <h5 class="mt-0 mb-1">Joseph S. Ferland</h5>
-                      <div class="designer-info d-flex justify-content-between">
-                        <p class="font-13">Designer</p>
-                        <small class="fw-normal ms-3"></small>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
     </div>
+  
+    <!-- Sidebar ends -->
+
+    <!-- Main content section starts -->
     <div class="main container-fluid">
       <div class="row g-4">
-        <div class="col-md-8">
+        <div class="col-xxl-8 col-lg-12">
           <!-- Page title section starts -->
           <section id="page_title">
             <div
@@ -259,7 +277,7 @@
                   </div>
                 </div>
                 <div class="row gx-3">
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/new-img-1.png"
@@ -276,7 +294,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/new-img-2.png"
@@ -293,7 +311,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/new-img-3.png"
@@ -310,7 +328,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/new-img-4.png"
@@ -352,7 +370,7 @@
                   </div>
                 </div>
                 <div class="row gx-3">
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/repoted-img-1.png"
@@ -369,7 +387,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/new-img-2.png"
@@ -386,7 +404,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/repoted-img-3.png"
@@ -403,7 +421,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-lg-3 col-md-6">
                     <div class="card border-0">
                       <img
                         src="./image/repoted-img-4.png"
@@ -428,12 +446,12 @@
 
           <!-- Page title section ends -->
         </div>
-        <div class="col-md-4">
+        <div class="col-xxl-4 col-lg-12">
           <section id="stats_section">
-            <div class="row g-4 mb-3">
-              <div class="col-sm-6">
+            <div class="row g-2 g-md-3 g-lg-4 mb-3">
+              <div class="col-xxl-6 col-lg-3 col-6">
                 <div class="card stats-card border-0">
-                  <div class="card-body d-flex p-0">
+                  <div class="card-body d-block d-md-flex p-0">
                     <div class="stats-icon d-flex align-items-center">
                       <img
                         src="./image/receiptcutoff-stats.png"
@@ -449,9 +467,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xxl-6 col-lg-3 col-6">
                 <div class="card stats-card border-0">
-                  <div class="card-body d-flex p-0">
+                  <div class="card-body d-block d-md-flex p-0">
                     <div class="stats-icon d-flex align-items-center">
                       <img
                         src="./image/double-check.png"
@@ -467,9 +485,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xxl-6 col-lg-3 col-6">
                 <div class="card stats-card border-0">
-                  <div class="card-body d-flex p-0">
+                  <div class="card-body d-block d-md-flex p-0">
                     <div class="stats-icon d-flex align-items-center">
                       <img
                         src="./image/clockHistory.png"
@@ -485,9 +503,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xxl-6 col-lg-3 col-6">
                 <div class="card stats-card border-0">
-                  <div class="card-body d-flex p-0">
+                  <div class="card-body d-block d-md-flex p-0">
                     <div class="stats-icon d-flex align-items-center">
                       <img
                         src="./image/bugfill-stats.png"
@@ -508,7 +526,7 @@
 
           <!-- Recent Activities start -->
           <section id="recent_activities">
-            <div class="row mb-3">
+            <div class="row mb-0 mb-md-3">
               <div class="col-12">
                 <div class="card activity-card">
                   <div
@@ -700,11 +718,22 @@
       </div>
     </div>
 
+    <!-- Main content section ends -->
+
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Sidebar Toggle starts -->
+    <script src="./js/custom.js"></script>
+    <!-- Sidebar Toggle starts -->
+    
+
   </body>
 </html>

@@ -1,0 +1,144 @@
+$color_1: #fff;
+$border-color_1: transparent;
+
+#page_title {
+	padding: 10px 0px 5px 0px;
+	.page-title-wrapper {
+		.page-heading {
+			font-size: 20px;
+			line-height: 30px;
+		}
+		.update-time {
+			font-size: 15px;
+			line-height: 22px;
+		}
+	}
+}
+.main.expanded {
+	width: 100%;
+	padding-left: 95px;
+}
+#image_section {
+	padding: 15px 0px 12px 0px;
+	.image-card-item {
+		padding: 20px 25px 38px 25px;
+		box-shadow: 4px 4px 4px 0px #0000000D;
+	}
+	img {
+		height: 260px;
+		object-fit: cover;
+        object-position: bottom;
+	}
+	.image-title {
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 30px;
+	}
+	.image-description {
+		padding: 20px 8px 0px 8px;
+	}
+	.img-section-wrapper {
+		padding: 0px 0px 25px 0px;
+		.img-section-title {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 23px;
+		}
+	}
+}
+#stats_section {
+	.stats-card {
+		&:hover {
+			background: linear-gradient(90.17deg, #074CE2 1.68%, #1579FF 98.78%);
+			.stats-data {
+				color: $color_1;
+			}
+			.stats-title {
+				color: $color_1;
+			}
+			.stats-icon {
+				filter: brightness(0) invert(1);
+			}
+		}
+		box-shadow: 4px 4px 4px 0px #0000000D;
+		padding: 29px;
+		border-radius: 7px;
+		.stats-icon {
+			margin-right: 12px;
+		}
+		.stats-data {
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 45px;
+		}
+	}
+}
+#recent_activities {
+	.activity-card {
+		padding: 40px 25px 0px 25px;
+		box-shadow: 4px 4px 4px 0px #0000000D;
+		.card-header {
+			background: #fff;
+			padding-bottom: 45px;
+		}
+		.activity-card-title {
+			font-size: 15px;
+			font-weight: 500;
+			line-height: 23px;
+		}
+		.activity-time-col {
+			text-align: right;
+		}
+		.activity-time {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+		.activity-table {
+			tr {
+				border-bottom: 1px solid #DFDFDF;
+				&:hover {
+					--bs-table-accent-bg: transparent !important;
+				}
+			}
+			td {
+				vertical-align: middle;
+				padding: 15px 8px;
+			}
+			img {
+				margin-right: 30px;
+				width: 40px;
+			}
+			.activity-user-name {
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 24px;
+			}
+			.view-activity-link {
+				td {
+					padding: 20px 8px;
+				}
+				border-bottom: 0px;
+				border-color: $border-color_1;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+    .page-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+	.main.expanded {
+        padding-left: 85px;
+    }
+	#stats_section{
+		.stats-card{
+			.stats-data{
+				line-height: 35px;
+			}
+		}
+	} 
+	
+}
